@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DA-Threads - Premium T-Shirts | Kenya's #1 T-Shirt Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fas fa-shirt"></i> DA-Threads
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to DA-Threads</h1>
+            <p>Premium Quality T-Shirts for Every Style</p>
+            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Collections</h2>
+            <div class="featured-grid" id="featuredProducts">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-mars"></i></div>
+                    <h3>Men's Collection</h3>
+                    <p>Classic fits and bold designs</p>
+                    <a href="shop.html?category=men" class="category-btn">Browse</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-venus"></i></div>
+                    <h3>Women's Collection</h3>
+                    <p>Trendy and comfortable styles</p>
+                    <a href="shop.html?category=women" class="category-btn">Browse</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-child"></i></div>
+                    <h3>Kids' Collection</h3>
+                    <p>Fun and colorful designs</p>
+                    <a href="shop.html?category=kids" class="category-btn">Browse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get exclusive offers and updates on new collections</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About DA-Threads</h4>
+                    <p>Premium quality t-shirts crafted for comfort and style. Supporting local fashion in Kenya.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DA-Threads. All rights reserved. | Crafted with <i class="fas fa-heart"></i> in Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
