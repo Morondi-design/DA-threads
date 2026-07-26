@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - DA-Threads | Premium T-Shirts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fas fa-shirt"></i> DA-Threads
+                </a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="shop.html" class="nav-link active">Shop</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Our Shop</h1>
+            <p>Browse our exclusive collection of premium t-shirts</p>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-container">
+                <!-- Sidebar Filters -->
+                <aside class="shop-sidebar">
+                    <div class="filter-box">
+                        <h3>Search</h3>
+                        <input type="text" id="searchInput" class="search-input" placeholder="Search products...">
+                    </div>
+
+                    <div class="filter-box">
+                        <h3>Category</h3>
+                        <div class="filter-options">
+                            <label class="filter-label">
+                                <input type="checkbox" class="category-filter" value="men">
+                                <span>Men's</span>
+                            </label>
+                            <label class="filter-label">
+                                <input type="checkbox" class="category-filter" value="women">
+                                <span>Women's</span>
+                            </label>
+                            <label class="filter-label">
+                                <input type="checkbox" class="category-filter" value="kids">
+                                <span>Kids'</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-box">
+                        <h3>Price Range</h3>
+                        <div class="price-range">
+                            <input type="range" id="priceRange" min="0" max="5000" value="5000" class="slider">
+                            <p>KES 0 - <span id="priceValue">5000</span></p>
+                        </div>
+                    </div>
+
+                    <div class="filter-box">
+                        <h3>Color</h3>
+                        <div class="color-options">
+                            <label class="color-label" style="background-color: #000;"></label>
+                            <label class="color-label" style="background-color: #fff; border: 2px solid #000;"></label>
+                            <label class="color-label" style="background-color: #e74c3c;"></label>
+                            <label class="color-label" style="background-color: #3498db;"></label>
+                            <label class="color-label" style="background-color: #2ecc71;"></label>
+                            <label class="color-label" style="background-color: #f39c12;"></label>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-secondary" id="clearFilters">Clear Filters</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="shop-main">
+                    <div class="shop-top">
+                        <p class="product-count">Showing <span id="productCount">0</span> products</p>
+                        <select id="sortBy" class="sort-select">
+                            <option value="default">Sort By</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                            <option value="newest">Newest</option>
+                        </select>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Products will be loaded here by JavaScript -->
+                    </div>
+
+                    <div class="no-products" id="noProducts" style="display: none;">
+                        <i class="fas fa-search"></i>
+                        <p>No products found. Try adjusting your filters.</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About DA-Threads</h4>
+                    <p>Premium quality t-shirts crafted for comfort and style. Supporting local fashion in Kenya.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DA-Threads. All rights reserved. | Crafted with <i class="fas fa-heart"></i> in Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

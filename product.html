@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - DA-Threads | Premium T-Shirts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fas fa-shirt"></i> DA-Threads
+                </a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span id="productName">Product</span>
+        </div>
+    </div>
+
+    <!-- Product Details Section -->
+    <section class="product-details-section">
+        <div class="container">
+            <div class="product-details-container">
+                <!-- Product Image -->
+                <div class="product-image-container">
+                    <div class="product-image" id="productImage">
+                        <img src="https://via.placeholder.com/500x500?text=DA-Threads+T-Shirt" alt="Product Image">
+                    </div>
+                    <div class="product-thumbnails">
+                        <div class="thumbnail active" style="background-color: #000;"></div>
+                        <div class="thumbnail" style="background-color: #fff; border: 2px solid #000;"></div>
+                        <div class="thumbnail" style="background-color: #e74c3c;"></div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 id="productTitle">Premium T-Shirt</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>(245 reviews)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <h2 id="productPrice">KES 1,499</h2>
+                        <p class="original-price" id="originalPrice">KES 2,499</p>
+                        <span class="discount-badge" id="discountBadge">-40%</span>
+                    </div>
+
+                    <p class="product-description" id="productDescription">
+                        Premium quality t-shirt made from 100% organic cotton. Comfortable, durable, and perfect for everyday wear.
+                    </p>
+
+                    <!-- Size Selection -->
+                    <div class="product-option">
+                        <label>Size:</label>
+                        <div class="size-options" id="sizeOptions">
+                            <button class="size-btn active" data-size="S">S</button>
+                            <button class="size-btn" data-size="M">M</button>
+                            <button class="size-btn" data-size="L">L</button>
+                            <button class="size-btn" data-size="XL">XL</button>
+                            <button class="size-btn" data-size="XXL">XXL</button>
+                        </div>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="product-option">
+                        <label>Color:</label>
+                        <div class="color-options-detailed">
+                            <button class="color-btn active" data-color="Black" style="background-color: #000;" title="Black"></button>
+                            <button class="color-btn" data-color="White" style="background-color: #fff; border: 2px solid #000;" title="White"></button>
+                            <button class="color-btn" data-color="Red" style="background-color: #e74c3c;" title="Red"></button>
+                            <button class="color-btn" data-color="Blue" style="background-color: #3498db;" title="Blue"></button>
+                            <button class="color-btn" data-color="Green" style="background-color: #2ecc71;" title="Green"></button>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Selection -->
+                    <div class="product-option">
+                        <label>Quantity:</label>
+                        <div class="quantity-selector">
+                            <button class="qty-btn" id="decreaseQty">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="100">
+                            <button class="qty-btn" id="increaseQty">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Add to Cart Button -->
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-large" id="addToCartBtn">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-outline btn-large" id="wishlistBtn">
+                            <i class="fas fa-heart"></i> Wishlist
+                        </button>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="product-info-details">
+                        <div class="info-row">
+                            <span><i class="fas fa-shipping-fast"></i> Free Shipping on orders above KES 2,500</span>
+                        </div>
+                        <div class="info-row">
+                            <span><i class="fas fa-undo"></i> 30-day return policy</span>
+                        </div>
+                        <div class="info-row">
+                            <span><i class="fas fa-check-circle"></i> 100% Authentic Products</span>
+                        </div>
+                        <div class="info-row">
+                            <span><i class="fas fa-lock"></i> Secure Checkout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+
+                <div class="tab-content active" id="description">
+                    <h3>Product Description</h3>
+                    <p id="fullDescription">Our premium t-shirt is crafted from the finest materials to ensure maximum comfort and longevity. Perfect for casual wear, sports, or any occasion.</p>
+                </div>
+
+                <div class="tab-content" id="specifications">
+                    <h3>Specifications</h3>
+                    <ul>
+                        <li><strong>Material:</strong> 100% Organic Cotton</li>
+                        <li><strong>Weight:</strong> 180 GSM</li>
+                        <li><strong>Care:</strong> Machine wash cold, dry low</li>
+                        <li><strong>Fit:</strong> Regular Fit</li>
+                        <li><strong>Available Colors:</strong> Black, White, Red, Blue, Green</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <h4>John Doe</h4>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Amazing quality! Fits perfectly and very comfortable. Will definitely buy again!</p>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <h4>Jane Smith</h4>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Great t-shirt, excellent value for money. Shipping was fast too.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2 class="section-title">Related Products</h2>
+                <div class="products-grid" id="relatedProducts">
+                    <!-- Related products will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About DA-Threads</h4>
+                    <p>Premium quality t-shirts crafted for comfort and style. Supporting local fashion in Kenya.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DA-Threads. All rights reserved. | Crafted with <i class="fas fa-heart"></i> in Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
